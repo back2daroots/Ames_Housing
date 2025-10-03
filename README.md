@@ -16,19 +16,18 @@ It demonstrates a full end-to-end machine learning workflow:
 
 ## ⚙️ Project structure
 
-housing-prices/
-│
-├── data/                  # raw and processed datasets (ignored in git)
-├── notebooks/             # Jupyter notebooks for experiments
-├── src/                   # source code (preprocessing, features, models)
-├── models/                # saved trained models (.joblib)
-├── plots/                 # visualizations (residuals, feature importance)
-├── experiments_log.csv    # experiment history
-├── requirements.in / .txt # dependencies
-├── environment.yml        # conda environment
-├── README.md              # project documentation
-└── .gitignore
-
+housing_prices/   
+├─ data/                    # raw and processed datasets (ignored in git)
+├─ notebooks/               # Jupyter notebooks for experiments
+│  └─ housing_prices.ipynb 
+├─ src/                     # source code (preprocessing, features, models)
+├─ models/                  # saved trained models (.joblib)
+├─ plots/                   # visualizations (residuals, feature importance)
+├─ experiments_log.csv      # experiment history
+├─ README.md                # project documentation
+├─ requirements.in / .txt   # dependencies
+├── environment.yml         # conda environment
+└─ .gitignore
 
 ---
 
