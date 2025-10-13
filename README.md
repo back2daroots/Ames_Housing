@@ -15,7 +15,7 @@ It demonstrates a full end-to-end machine learning workflow:
 ---
 
 ## ⚙️ Project structure
-
+```
 housing_prices/   
 ├─ data/                    # raw and processed datasets (ignored in git)
 ├─ notebooks/               # Jupyter notebooks for experiments
@@ -28,23 +28,24 @@ housing_prices/
 ├─ requirements.in / .txt   # dependencies
 ├── environment.yml         # conda environment
 └─ .gitignore
-
+```
 ---
 
 ## 📊 Models & Results
 All models were trained using a unified pipeline with preprocessing and feature engineering.  
 Hyperparameter tuning was performed via **GridSearchCV (5-fold CV)**, results logged in `experiments_log.csv`.
 
-| Model        | CV RMSE | Test RMSE ($) | MAE ($) | R²   |
-|--------------|---------|---------------|---------|------|
-| Ridge        | …       | …             | …       | …    |
-| Lasso        | …       | …             | …       | …    |
-| RandomForest | …       | …             | …       | …    |
-| XGBoost      | …       | …             | …       | …    |
-| LightGBM     | …       | …             | …       | …    |
-| CatBoost     | …       | …             | …       | …    |
+| Model         |   CV RMSE ($) |   Test RMSE ($) |   MAE ($) |     R² |
+|:--------------|--------------:|----------------:|----------:|-------:|
+| CatBoost      |       22809.9 |         22748.8 |   13796.2 | 0.9355 |
+| XGB           |       24396.2 |         23127   |   14008.9 | 0.9333 |
+| LightGBM      |       24338.4 |         26107.6 |   14947.1 | 0.915  |
+| RandomForest  |       27425.4 |         26621.8 |   15804.8 | 0.9116 |
+| XGB (cleaned) |         ---   |         27160.7 |   13928.7 | 0.908  |
+| Ridge         |       30062.6 |         31011.9 |   18624.9 | 0.88   |
+| Lasso         |       31078.2 |         31371.3 |   18815.4 | 0.8772 |
 
-*(XGBoost currently achieves the best performance with R² ≈ 0.936.)*
+
 
 ---
 
