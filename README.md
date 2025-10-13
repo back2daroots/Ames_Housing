@@ -82,13 +82,34 @@ conda activate housing
 jupyter lab
 ---
 ```
-## 🚀 Next Steps 
 
-```markdown
-## 🚀 Next Steps
+## 📝 Project Status (Interim Summary)
 
-- Try target log-transform to reduce error variance
-- Apply regularization and feature selection techniques
-- Advanced ensembling (Stacking / Blending)
-- Automate feature pipeline (move to `src/` modules)
-- Deployment candidate with `FastAPI` or `Streamlit`
+This project has reached a solid baseline stage with a complete end-to-end ML workflow:
+- ✅ Exploratory data analysis and preprocessing  
+- ✅ Feature engineering and handling of skewed numerical features  
+- ✅ Encoding of categorical variables and scaling of numerical ones  
+- ✅ Model training with multiple algorithms (Linear, Ridge, Lasso, RandomForest, XGBoost, LightGBM, CatBoost)  
+- ✅ Hyperparameter tuning with GridSearchCV  
+- ✅ Outlier analysis and experiment with data cleaning  
+- ✅ Residuals analysis and permutation feature importance  
+- ✅ Experiment logging and results tracking
+
+The current **best performing model** is **CatBoost** with:
+- **RMSE ≈ $22.7k**
+- **MAE ≈ $13.8k**
+- **R² ≈ 0.935**
+
+The repository contains:
+- 📊 Key visualizations (residual plots, permutation importance)  
+- 🧪 A reproducible pipeline  
+- 🧾 Logged experiment history  
+- 🧱 Ready environment specification (`environment.yml`)
+
+### 🚀 Planned Next Steps
+- Log-transform target variable for improved error distribution  
+- Refactor core functions into `src/` module structure for cleaner architecture  
+- Explore advanced feature selection and ensembling methods  
+- Build a lightweight deployment demo (e.g., Streamlit or FastAPI)
+
+🟡 **Status:** Development paused (baseline reached, ready for extension later)
