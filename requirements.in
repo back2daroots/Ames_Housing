@@ -7,3 +7,6 @@ xgboost
 lightgbm
 catboost
 jupyter
+catboost
+lightgbm
+tabulate
